@@ -27,8 +27,8 @@ export default function useForm(callback, validate) {
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
-      callback();
     }
+    callback();
   }, [errors]);
 
   return { handleChange, handleSubmit, values, errors };
