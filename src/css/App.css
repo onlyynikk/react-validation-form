@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  color: red;
+}
+
+.conatainer {
+  width: 100px;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+}
+
+.header {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+}
+
+.sign-up-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.success-header {
+  padding-top: 100px;
+  font-size: 3rem;
+  font-weight: 200px;
+}
