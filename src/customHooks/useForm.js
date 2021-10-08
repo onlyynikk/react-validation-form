@@ -25,10 +25,14 @@ export default function useForm(callback, validate) {
     setIsSubmitting(true);
   }
 
-  useEffect(() => {
+  function conditionToSumbit() {
     if (Object.keys(errors).length === 0 && isSubmitting) {
+      callback();
     }
-    callback();
+  }
+
+  useEffect(() => {
+    conditionToSumbit();
   }, [errors]);
 
   return { handleChange, handleSubmit, values, errors };
